@@ -3,7 +3,10 @@
 
 :root {
     --primary-color: #047aed;
-    --font: 'Lato'
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    --font: 'Lato';
 }
 
 /* Base Style */
@@ -97,49 +100,7 @@ img {
     transform: scale(.97);
 }
 
-.text-center {
-    text-align: center;
-}
 
-.my-1 {
-    margin: 1rem 0;
-}
-
-.my-2 {
-    margin: 1.5rem 0;
-}
-
-.my-3 {
-    margin: 2rem 0;
-}
-
-.my-4 {
-    margin: 3rem 0;
-}
-
-.my-5 {
-    margin: 4rem 0;
-}
-
-.m-1 {
-    margin: 1rem;
-}
-
-.m-2 {
-    margin: 1.5rem;
-}
-
-.m-3 {
-    margin: 2rem;
-}
-
-.m-4 {
-    margin: 3rem;
-}
-
-.m-5 {
-    margin: 4rem;
-}
 
 /* Navbar */
 .navbar {
@@ -259,6 +220,79 @@ img {
 .cli .grid > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+
+
+
+/* Utilities*/
+.text-center {
+    text-align: center;
+}
+
+.bg-primary, .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark, .btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.bg-light, .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
 }
 
 /* Margins */
